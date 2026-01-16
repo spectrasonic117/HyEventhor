@@ -1,28 +1,27 @@
-package com.spectrasonic.HyEventhor;
+package com.spectrasonic.hyeventhor;
 
 import com.hypixel.hytale.server.core.plugin.JavaPlugin;
 import com.hypixel.hytale.server.core.plugin.JavaPluginInit;
+import com.spectrasonic.hyeventhor.managers.CommandManager;
 import com.hypixel.hytale.logger.HytaleLogger;
-import com.spectrasonic.HyEventhor.managers.CommandManager;
+
+import javax.annotation.Nonnull;
 
 public class Main extends JavaPlugin {
-    
-    private static Main instance;
+
     private static final HytaleLogger LOGGER = HytaleLogger.forEnclosingClass();
 
-    public Main(JavaPluginInit init) {
+    public Main(@Nonnull JavaPluginInit init) {
         super(init);
-        instance = this;
-    }
-    
-    public static Main getInstance() {
-        return instance;
+        LOGGER.atInfo().log("Hola desde " + this.getName() + " version " + this.getManifest().getVersion().toString());
     }
 
     @Override
     public void setup() {
+        super.setup();
         CommandManager commandManager = new CommandManager(this);
         commandManager.registerCommands();
         LOGGER.atInfo().log("HyEventhor setup correctly!");
+        LOGGER.atInfo().log("Developed by Spectrasonic.");
     }
 }

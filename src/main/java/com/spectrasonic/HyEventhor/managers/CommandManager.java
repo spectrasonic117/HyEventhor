@@ -1,9 +1,9 @@
-package com.spectrasonic.HyEventhor.managers;
+package com.spectrasonic.hyeventhor.managers;
 
-import com.spectrasonic.HyEventhor.Main;
-import com.spectrasonic.HyEventhor.commands.GameModeACommand;
-import com.spectrasonic.HyEventhor.commands.GameModeCCommand;
-import com.spectrasonic.HyEventhor.commands.GameModeECommand;
+import com.spectrasonic.hyeventhor.Main;
+import com.spectrasonic.hyeventhor.commands.GameModeACommand;
+import com.spectrasonic.hyeventhor.commands.GameModeCCommand;
+import com.spectrasonic.hyeventhor.commands.GameModeECommand;
 
 public class CommandManager {
     private final Main plugin;

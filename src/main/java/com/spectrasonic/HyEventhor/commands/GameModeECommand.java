@@ -1,10 +1,11 @@
-package com.spectrasonic.HyEventhor.commands;
+package com.spectrasonic.hyeventhor.commands;
 
 import com.hypixel.hytale.server.core.command.system.AbstractCommand;
 import com.hypixel.hytale.server.core.command.system.CommandContext;
 import com.hypixel.hytale.server.core.universe.PlayerRef;
-import com.spectrasonic.HyEventhor.managers.MessageManager;
 import com.spectrasonic.Utils.MessageUtils;
+import com.spectrasonic.hyeventhor.managers.MessageManager;
+
 import javax.annotation.Nonnull;
 import java.util.concurrent.CompletableFuture;
 

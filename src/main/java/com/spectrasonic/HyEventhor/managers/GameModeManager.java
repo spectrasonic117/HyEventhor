@@ -1,4 +1,4 @@
-package com.spectrasonic.HyEventhor.managers;
+package com.spectrasonic.hyeventhor.managers;
 
 import com.hypixel.hytale.logger.HytaleLogger;
 import com.hypixel.hytale.server.core.universe.PlayerRef;
@@ -10,7 +10,8 @@ public class GameModeManager {
     private static GameModeManager instance;
 
     public static GameModeManager getInstance() {
-        if (instance == null) instance = new GameModeManager();
+        if (instance == null)
+            instance = new GameModeManager();
         return instance;
     }
 

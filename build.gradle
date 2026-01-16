@@ -15,7 +15,7 @@ dependencies {
 }
 
 application {
-    mainClass = 'com.spectrasonic.HyEventhor.Main'
+    mainClass = 'com.spectrasonic.hyeventhor.Main'
 }
 
 jar {
