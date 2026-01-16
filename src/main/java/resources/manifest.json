@@ -1,0 +1,19 @@
+{
+    "Group": "com.spectrasonic",
+    "Name": "HyEventhor",
+    "Main": "com.spectrasonic.HyEventhor.Main",
+    "Version": "1.0.0",
+    "Description": "Un plugin para crear eventos en Hytale",
+    "Authors": [
+        {
+            "Name": "Spectrasonic",
+            "Email": "spectrasonic117@gamil.com",
+            "Url": "https://spectrasonic.xyz"
+        }
+    ],
+    "Website": "https://spectrasonic.xyz",
+    "ServerVersion": "*",
+    "Dependencies": {},
+    "OptionalDependencies": {},
+    "DisabledByDefault": false
+}

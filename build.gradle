@@ -1,0 +1,44 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        url = 'https://repo.hytale.com/repository/maven-public/'
+    }
+}
+
+dependencies {
+    compileOnly files('libs/HytaleServer.jar')
+}
+
+application {
+    mainClass = 'com.spectrasonic.HyEventhor.Main'
+}
+
+jar {
+    destinationDirectory = file("${rootDir}/out")
+    archiveFileName = "${rootProject.name}-${version}.jar"
+}
+
+
+def targetJavaVersion = "${javaVersion}"
+java {
+    def javaVersion = JavaVersion.toVersion(targetJavaVersion)
+    sourceCompatibility = javaVersion
+    targetCompatibility = javaVersion
+    if (JavaVersion.current() < javaVersion) {
+        toolchain.languageVersion = JavaLanguageVersion.of(targetJavaVersion)
+    }
+}
+
+processResources {
+    def props = [version: version]
+    inputs.properties props
+    filteringCharset = "UTF-8"
+    filesMatching("plugin.yml") {
+        expand props
+    }
+}

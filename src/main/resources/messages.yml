@@ -1,0 +1,4 @@
+messages:
+    message.gamemode_adventure: "<yellow>Gamemode cambiado a Aventura!</yellow>"
+    message.gamemode_creative: "<yellow>Gamemode cambiado a Creativo!</yellow>"
+    message.gamemode_not_available: "<red>Este gamemode aún no está disponible.</red>"
