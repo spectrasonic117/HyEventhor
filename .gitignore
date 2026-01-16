@@ -5,3 +5,10 @@ build/
 libs/*
 .DS_Store
 out/
+.classpath
+.project
+.settings/
+.idea/
+*.iml
+local.properties
+*.keystore
